@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        .section1 {
+            background-color: rgb(87, 131, 131);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            color: white;
+        }
+        footer {
+            color: #ff0000;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        }
+
+        .social-icons a {
+        text-decoration: none;
+        }
+    </style> 
+</head>
+<body>
+    <div class="section1">   
+        <h1>Pro Level</h1>
+    </div>
+
+    <div class="section">
+        <h2>Day 1-3: Advanced Penetration Testing Techniques</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Custom Penetration Testing Scripts</u></li>
+                <ul>
+                    <li>Write custom scripts in Python or Bash to automate complex tasks like network scanning, data exfiltration, or log tampering.</li>
+                    <li>Integrate tools like Scapy for crafting custom network packets.</li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Advanced Social Engineering</u></li>
+                <ul>
+                    <li>Learn advanced social engineering techniques, focusing on pretexting, vishing, and phishing campaigns.</li>
+                    <li>Use tools like SET (Social Engineering Toolkit) to craft targeted phishing campaigns and bypass email filters.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Mobile Application Penetration Testing</u></li>
+                <ul>
+                    <li>Perform security assessments on iOS and Android apps.</li>
+                    <li>Use tools like Frida, Burp Suite Mobile Assistant, and APKTool to decompile, analyze, and exploit mobile apps.</li>
+                    <li>Test for insecure storage, API vulnerabilities, and improper certificate handling.</li>
+                </ul>
+        </ul>
+
+    <br>
+<hr>
+    <br>
+
+    <div class="section">
+        <h2>Day 4-6: Advanced Web Application Exploitation</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Exploiting Advanced Authentication Flaws</u></li>
+                <ul>
+                    <li>Focus on vulnerabilities in multi-factor authentication (MFA), OAuth, and SAML.</li>
+                    <li>Explore OAuth Misconfigurations or JWT (JSON Web Token) attacks to hijack authentication.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Bypassing Web Application Firewalls (WAFs)</u></li>
+                <ul>
+                    <li>Study and practice WAF evasion techniques to bypass security filters and gain access to protected web apps.</li>
+                    <li>Experiment with encoding, obfuscation, and using advanced payloads in SQL injection or XSS attacks.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 5 - 6:</strong> <u>API Security Exploitation</u></li>
+                <ul>
+                    <li>Focus on API exploitation, looking for issues like insecure direct object references (IDOR), lack of rate limiting, and broken authentication.</li>
+                    <li>Use tools like Postman and Burp Suite to analyze and manipulate API calls.</li>
+                </ul>
+        </ul>
+
+        <br>
+    <hr>
+        <br>
+
+    <div class="section">
+        <h2>Day 7-9: Red Teaming Engagements and Attack Chains</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Crafting Attack Chains</u></li>
+                <ul>
+                    <li>Learn to build multi-stage attack chains that combine social engineering, network exploitation, privilege escalation, and lateral movement.</li>
+                    <li>Simulate APT-style attacks where persistence is maintained across long periods of time.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Advanced C2 (Command and Control) Setup</u></li>
+                <ul>
+                    <li>Develop a C2 infrastructure using tools like <b>Cobalt Strike</b>, <b>Empire</b>, or <b>Sliver</b>.</li>
+                    <li>Learn how to customize C2 communication to evade detection, using techniques like <b>domain fronting</b>, <b>DNS tunneling</b>, or <b>encrypted HTTPS traffic.</b></li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Lateral Movement in Hardened Networks</u></li>
+                <ul>
+                    <li>Use pass-the-hash, pass-the-ticket, and OverPass-the-Hash attacks to move laterally in environments that implement strong security measures like <b>Network Access Control (NAC)</b> and <b>LDAP.</b></li>
+                </ul>
+        </ul>
+
+        <br>
+    <hr>
+        <br>
+
+    <div class="section">
+        <h2>Day 10-12: Custom Exploit Development</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Custom Exploit Writing</u></li>
+                <ul>
+                    <li>Develop exploits for custom vulnerabilities, focusing on buffer overflows, format string vulnerabilities, and use-after-free bugs.</li>
+                    <li>Dive deep into memory corruption techniques on modern systems with mitigations like <b>ASLR</b>, <b>DEP</b>, and <b>Stack Canaries.</b></li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Advanced Shellcoding</u></li>
+                <ul>
+                    <li>Write custom shellcode from scratch and learn how to integrate it into exploit frameworks.</li>
+                    <li>Understand how to bypass modern exploit mitigations and integrate polymorphic or metamorphic shellcode for evasive exploits.</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Exploit Automation</u></li>
+                <ul>
+                    <li>Automate the exploit creation process using tools like ROPgadget, pwntools, and custom Python scripts.</li>
+                    <li>Practice turning manual exploits into reliable Metasploit modules or standalone binaries.</li>
+                </ul>
+        </ul>
+
+        <br>
+    <hr>
+        <br>    
+
+    <div class="section">
+        <h2>Day 13-15: Advanced Post-Exploitation Techniques</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced Data Exfiltration</u></li>
+                <ul>
+                    <li>Learn techniques to exfiltrate data stealthily, bypassing detection and logging.</li>
+                    <li>Use covert channels like DNS tunneling, encrypted file transfers, or steganography to exfiltrate large amounts of data unnoticed.</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Bypassing EDR and AV Solutions</u></li>
+                <ul>
+                    <li>Study advanced techniques to bypass <b>Endpoint Detection and Response (EDR)</b> and <b>Anti-Virus (AV)</b> systems.</li>
+                    <li>Use tools like DefenderCheck, AV Evasion Frameworks, and learn manual obfuscation techniques to create undetectable payloads.</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Persistence Mechanisms</u></li>
+                <ul>
+                    <li>Develop advanced persistence mechanisms that can survive reboots and security sweeps.</li>
+                    <li>Use techniques like <b>bootkits</b>, <b>hidden scheduled tasks</b>, or <b>WMI event subscription</b> for long-term persistence.</li>
+                </ul>
+        </ul>
+        
+        <br>
+    <hr>
+        <br>    
+
+    <div class="section">
+        <h2>Day 16-18: Advanced Wireless and Network Exploitation</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced Wi-Fi Attacks</u></li>
+                <ul>
+                    <li>Perform advanced attacks on Wi-Fi networks using techniques like <b>KRACK</b>, <b>Evil Twin attacks</b>, and <b>WPA3 bypasses</b>.</li>
+                    <li>Study modern encryption methods like WPA3 and focus on defeating <b>Protected Management Frames (PMF).</b></li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Exploiting Enterprise Networks</u></li>
+                <ul>
+                    <li>Focus on exploiting enterprise networks, including <b>802.1x protected environments</b>, <b>VLAN hopping</b>, and <b>SMB relay attacks.</b></li>
+                    <li>Learn how to bypass network segmentation and firewall rules to escalate privileges.</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Advanced VoIP and Bluetooth Attacks</u></li>
+                <ul>
+                    <li>Study vulnerabilities in VoIP systems (e.g., SIP protocol) and Bluetooth devices.</li>
+                    <li>Practice BlueBorne attacks and exploiting insecure Bluetooth pairing.</li>
+                </ul>
+        </ul>
+    
+        <br>
+    <hr>
+        <br>    
+
+    <div class="section">
+        <h2>Day 19-21: Advanced Cryptography and Exploiting Weak Implementations</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Breaking Weak Cryptography</u></li>
+                <ul>
+                    <li>Break weak cryptographic implementations such as poorly implemented <b>AES</b>, <b>RSA</b>, or <b>MD5/SHA1 hashes.</b></li>
+                    <li>Focus on Padding Oracle Attacks, CBC bit flipping attacks, and RSA key flaws.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Cryptographic Backdoors</u></li>
+                <ul>
+                    <li>Study how to insert backdoors into cryptographic algorithms or systems without being detected.</li>
+                    <li>Focus on using advanced cryptographic techniques to create backdoors that resist reverse engineering.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Blockchain and Smart Contract Exploitation</u></li>
+                <ul>
+                    <li>Learn to exploit vulnerabilities in blockchain systems and smart contracts.</li>
+                    <li>Use tools like Mythril and Remix to identify vulnerabilities in Ethereum smart contracts such as reentrancy attacks and integer overflows.</li>
+                </ul>
+        </ul>
+    
+        <br>
+    <hr>
+        <br>
+
+    <div class="section">
+        <h2>Day 22-24: Advanced Active Directory Exploitation</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced Kerberos Attacks</u></li>
+                <ul>
+                    <li>Focus on advanced Kerberos attacks like ASREPRoasting, S4U2Proxy attacks, and Kerberos delegation abuse.</li>
+                    <li>Use tools like <b>Rubeus</b> and <b>Impacket</b> for performing advanced Kerberos attacks.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Forest and Domain Trust Exploitation</u></li>
+                <ul>
+                    <li>Exploit Active Directory forest and domain trust relationships to escalate privileges across domains and forests.</li>
+                    <li>Use <b>BloodHound</b> to visualize trust relationships and identify attack paths.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 5 - 6:</strong> <u>AD ACL and DACL Exploitation</u></li>
+                <ul>
+                    <li>Learn how to manipulate <b>Access Control Lists (ACLs)</b> and <b>Discretionary Access Control Lists (DACLs)</b> in Active Directory for lateral movement and persistence.</li>
+                    <li>Use tools like <b>ADControlPath</b> and <b>SharpHound</b> to discover exploitable ACL misconfigurations.</li>
+                </ul>
+        </ul>
+    
+    <br>
+<hr>
+     <br>   
+
+    <div class="section">
+        <h2>Day 25-27: Pro-Level CTF Challenges and Real-World Scenarios</h2>
+    </div>    
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Offensive CTFs with Realistic Scenarios</u></li>
+                <ul>
+                    <li>Participate in pro-level Capture the Flag (CTF) challenges that focus on realistic, enterprise-level environments.</li>
+                    <li>Platforms like Hack The Box (Pro Labs) and Offensive Security Proving Grounds will help simulate real-world attack scenarios.</li>
+                </ul>
+            
+            <br>
+            <li><strong>Hour 3 - 4:</strong> <u>Automating CTFs with Scripting</u></li>
+                <ul>
+                    <li>Use custom scripts and automation to streamline and solve complex CTF challenges.</li>
+                    <li>Focus on automating reverse engineering, vulnerability scanning, or exploiting repetitive tasks using tools like pwntools or custom Python/Bash scripts.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Real-World Exploits in Capture the Flag</u></li>
+                <ul>
+                    <li>Develop and exploit real-world vulnerabilities in CTF environments.</li>
+                    <li>Focus on challenges that mimic recent CVE vulnerabilities or replicate real-world enterprise breaches.</li>
+                </ul>
+        </ul>
+    </div>
+
+    <br>
+<hr>
+    <br>
+        
+        <h2 class="section1">Weekly Goals:</h2>
+        <ul>
+            <li>Develop custom exploits and shellcode to bypass advanced defenses.</li>
+            <li>Perform advanced red team engagements by simulating full attack chains and deploying evasive C2 infrastructure.</li>
+            <li>Exploit enterprise environments, including wireless, API, Active Directory, and cloud systems.</li>
+            <li>Master advanced post-exploitation techniques, including EDR evasion, persistence, and lateral movement.</li>
+            <li>Perform real-world CTF challenges that simulate professional pentest environments.</li>
+        </ul>
+<hr>
+
+<button onclick="previousSection()">Previous</button>
+<button onclick="nextSection()">Next</button>
+<button onclick="pdfsection()">PDF</button>
+
+<script>
+    function nextSection() {
+        window.location.href = 'Programming_for_hackers.html'; // Change this to the actual next page
+    }
+
+    function previousSection() {
+        window.location.href = 'Most_Advance_level.html'; // Change this to the actual previous page
+    }
+
+    function pdfsection() {
+        window.location.href = 'All_pdf.html';
+    }
+</script>
+
+    <div class="social-icons">
+        <a href="https://t.me/Hunter_3301" target="_blank">
+            <i class="fab fa-telegram" style="font-size:50px; color:#0088cc;"></i>
+        </a>
+    </div>
+
+    <br>
+    
+    <footer>Author: Noob Hunter</footer>
+</body>
+</html>

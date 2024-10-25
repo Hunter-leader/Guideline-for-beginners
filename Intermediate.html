@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .section1 {
+            background-color: rgb(87, 131, 131);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            color: white;
+        }
+        button {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        footer {
+            color: #ff0000;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        }
+
+        .social-icons a {
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section1">
+        <h1>Intermediate Level</h1>
+    </div>
+
+    <div class="section">
+        <h2>Day 1-3: Advanced Network Scanning and Enumeration</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Nmap Advanced Scanning</u></li>
+                <ul>
+                    <li>Learn advanced Nmap techniques like evading firewalls, IDS/IPS, and conducting stealth scans.</li>
+                    <li>Use options like <code>nmap -sS</code>, <code>-sF</code>, and <code>--data-length</code> to bypass filters.</li>
+                    <li>Conduct scans with <code>-Pn</code>, <code>-T</code>, and <code>--reason</code> to gather more detailed information while avoiding detection.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>OS Detection and Version Scanning</u></li>
+                <ul>
+                    <li>Understand fingerprinting techniques to detect operating systems and software versions.</li>
+                    <li>Practice using <b>Nmap</b> and <b>Xprobe2</b> for advanced OS detection: <code>nmap -O [target_IP]</code>.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Advanced Enumeration with Enum4Linux and SNMP</u></li>
+                <ul>
+                    <li>Use Enum4Linux for SMB enumeration: gather information about users, shares, and services.</li>
+                    <li>Practice using <b>SNMPWalk</b> to enumerate network devices using <b>SNMP.</b></li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Vulnerability Scanning</u></li>
+                <ul>
+                    <li>Use tools like OpenVAS or Nessus to scan for vulnerabilities on your target systems.</li>
+                    <li>Understand how to read scan results and prioritize vulnerabilities.</li>
+                </ul>
+        </ul>
+        
+<br>
+<hr>
+<br>        
+
+    <div class="section">
+        <h2>Day 4-6: Web Application Penetration Testing (Intermediate)</h2>
+    </div>
+        <ul>
+            <li><strong style="color:red">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Manual Testing for Web Vulnerabilities</u></li>
+                <ul>
+                    <li>Perform manual testing for SQL Injection, XSS, and CSRF vulnerabilities without automated tools.</li>
+                    <li>Use browser tools <b>(like Burp Suite)</b> and manual input fields to identify vulnerabilities.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Advanced SQL Injection</u></li>
+                <ul>
+                    <li>Move beyond basic SQLi and practice blind SQL injection, time-based injections, and extracting data using UNION queries.</li>
+                    <li>Use tools like <b>SQLMap</b> for automation and analyze how it works internally.</li>
+                </ul>
+           
+            <br>
+        
+            <li><strong>Hour 5:</strong> <u>Authentication and Session Management</u></li>
+                <ul>
+                    <li>Learn about authentication flaws and test for session management vulnerabilities.</li>
+                    <li>Explore cookie manipulation, session fixation, and insecure password storage.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Bypassing Web Application Firewalls (WAF)</u></li>
+                <ul>
+                    <li>Understand how WAFs work and learn techniques for bypassing them (e.g., encoding, using special characters, etc.).</li>
+                    <li>Use tools like <b>WAFW00F</b> to detect the presence of a WAF.</li>
+                </ul>
+            </li>
+        </ul>
+    
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 7-9: Exploit Development (Intermediate)</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color:red";>Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Buffer Overflow Basics</u></li>
+                <ul>
+                    <li>Dive into buffer overflows and learn how they work in-depth.</li>
+                    <li>Write basic buffer overflow exploits using tools like Immunity Debugger and gdb.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>SEH (Structured Exception Handler) Overwrite</u></li>
+                <ul>
+                    <li>Learn how to exploit SEH-based buffer overflows by overwriting exception handlers in Windows.</li>
+                    <li>Practice exploiting vulnerable applications that use <b>SEH.</b></li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Exploit Research and CVE</u></li>
+                <ul>
+                    <li>Research public exploits (using Exploit-DB or CVE databases) and understand how they work.</li>
+                    <li>Download and test exploits on vulnerable software.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Shellcoding</u></li>
+                <ul>
+                    <li>Learn shellcoding techniques to craft custom shellcode payloads.</li>
+                    <li>Use tools like <b>msfvenom</b> to generate payloads and embed them into exploits.</li>
+                </ul>
+        </ul>
+
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 10-12: Wireless and IoT Hacking</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Wireless Hacking Basics</u></li>
+                <ul>
+                    <li>Understand wireless security protocols (WEP, WPA, WPA2).</li>
+                    <li>Use <b>Aircrack-ng</b> to capture wireless traffic and attempt to crack WEP and WPA keys.</li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 3:</strong> <u>Evil Twin Attack</u></li>
+                <ul>
+                    <li>Set up an evil twin attack to trick users into connecting to your rogue access point.</li>
+                    <li>Use tools like <b>airbase-ng</b> and <b>Wireshark</b> to capture credentials.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Bluetooth Hacking</u></li>
+                <ul>
+                    <li>Learn how to exploit vulnerabilities in Bluetooth using tools like BlueHydra or Bluesnarfer.</li>
+                    <li>Practice discovering and attacking Bluetooth-enabled devices.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>IoT Device Hacking</u></li>
+                <ul>
+                    <li>Explore security vulnerabilities in IoT devices.</li>
+                    <li>Use <b>Binwalk</b> and <b>Firmadyne</b> to analyze IoT firmware for backdoors or other flaws.</li>
+                </ul>
+        </ul>
+        
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 13-15: Privilege Escalation and Post-Exploitation</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Linux Privilege Escalation</u></li>
+                <ul>
+                    <li>Learn Linux privilege escalation techniques: kernel exploits, misconfigured SUID files, cron jobs, etc.</li>
+                    <li>Practice using tools like <b>LinPEAS</b> to find weaknesses.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>Windows Privilege Escalation</u></li>
+                <ul>
+                    <li>Understand Windows privilege escalation: insecure services, DLL hijacking, unquoted paths, and more.</li>
+                    <li>Use <b>PowerUp</b> and <b>WinPEAS</b> to automate discovery of privilege escalation paths.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Post-Exploitation with Metasploit</u></li>
+                <ul>
+                    <li>Perform post-exploitation tasks like gathering credentials, escalating privileges, and maintaining access on compromised systems.</li>
+                    <li>Practice persistence methods (e.g., backdoors, rootkits).</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Lateral Movement</u></li>
+                <ul>
+                    <li>Learn how to move laterally across networks by exploiting trusts between machines (e.g., pass-the-hash or RDP connections).</li>
+                    <li>Use PsExec to execute commands on remote systems after credential compromise.</li>
+                </ul>
+        </ul>
+    
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 16-18: Advanced Scripting and Automation</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Python for Automation</u></li>
+                <ul>
+                    <li>Write Python scripts to automate scanning, enumeration, or exploitation tasks.</li>
+                    <li>Practice using Python libraries like Scapy, Socket, and Requests.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>Bash Scripting for Penetration Testing</u></li>
+                <ul>
+                    <li>Write Bash scripts to automate repetitive tasks like network scanning, data parsing, and reporting.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>PowerShell for Post-Exploitation</u></li>
+                <ul>
+                    <li>Use PowerShell to automate post-exploitation on Windows machines.</li>
+                    <li>Practice running PowerShell scripts for tasks like downloading files, gathering credentials, and escalating privileges.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Cron Jobs and Scheduled Tasks</u></li>
+                <ul>
+                    <li>Learn how to set up persistent cron jobs on Linux and scheduled tasks on Windows to automate and maintain access.</li>
+                </ul>
+        </ul>
+    
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 19-21: Capture the Flag (CTF) and Challenges</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>CTF Preparation</u></li>
+                <ul>
+                    <li>Participate in intermediate-level CTFs on platforms like TryHackMe or Hack The Box.</li>
+                    <li>Focus on a range of challenges: web exploitation, network attacks, reverse engineering, etc.</li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Web Exploitation Challenges</u></li>
+                <ul>
+                    <li>Solve web-related CTF challenges that require knowledge of advanced vulnerabilities like SQLi, XSS, and CSRF.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>System Exploitation Challenges</u></li>
+                <ul>
+                    <li>Focus on privilege escalation, lateral movement, and post-exploitation challenges in CTFs.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+<br>
+<hr>
+<br>
+    
+    <h2 class="section1">Weekly Goals:</h2>
+    <ul>
+        <li>Master network scanning and enumeration techniques beyond the basics.</li>
+        <li>Gain deeper understanding of web app security, including manual testing and advanced attacks.</li>
+        <li>Learn and practice exploit development, buffer overflows, and shellcoding.</li>
+        <li>Understand wireless hacking and exploit IoT devices.</li>
+        <li>Practice privilege escalation, post-exploitation, and automation using scripts.</li>
+        <li>Participate in intermediate-level CTFs to reinforce skills.</li>
+    </ul>
+
+    <hr>
+
+    <button onclick="previousSection()">Previous</button>
+    <button onclick="nextSection()">Next</button>
+    <button onclick="goToPDF()">PDF</button>
+
+    <script>
+        function nextSection() {
+            window.location.href = 'Advance_level.html'; // Change this to the actual next page
+        }
+
+        function previousSection() {
+            window.location.href = 'Index.html'; // Change this to the actual previous page
+        }
+
+        function goToPDF() {
+        window.location.href = 'All_pdf.html'; // Change this to the actual next page
+        }
+    </script>
+
+    <div class="social-icons">
+        <a href="https://t.me/Hunter_3301" target="_blank">
+            <i class="fab fa-telegram" style="font-size:50px; color:#0088cc;"></i>
+        </a>
+    </div>
+    <br>
+    <footer>Author: Noob Hunter</footer>
+</body>
+</html>

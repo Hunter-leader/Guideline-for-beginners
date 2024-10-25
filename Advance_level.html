@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        .section1 {
+            background-color: rgb(87, 131, 131);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            color: white;
+        }
+        footer {
+            color: #ff0000;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        }
+
+        .social-icons a {
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <h1>Advanced Level</h1>
+    </div>
+
+    <div class="section">
+        <h2>Day 1-3: Advanced Exploit Development</h2>
+    </div>
+        <ul>
+            <li><strong style="color:red";>Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced Buffer Overflow</u></li>
+                <ul>
+                    <li>Learn advanced buffer overflow techniques: stack and heap overflows, understanding stack frames, control flow hijacking.</li>
+                    <li>Use <b>gdb</b> or <b>Immunity Debugger</b> to analyze vulnerabilities in applications.</li>
+                    <li>Practice identifying buffer overflow vulnerabilities and writing working exploits.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Return-Oriented Programming (ROP)</u></li>
+                <ul>
+                    <li>Dive into ROP and learn how to bypass modern protections like <b>Data Execution Prevention (DEP)</b> and <b> Address Space Layout Randomization (ASLR).</b></li>
+                    <li>Use tools like <b>ROPgadget</b> to find usable ROP chains in binaries.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Fuzzing for Vulnerabilities</u></li>
+                <ul>
+                    <li>Learn how to use fuzzing tools like <b>AFL (American Fuzzy Lop)</b> to discover unknown vulnerabilities.</li>
+                    <li>Set up a fuzzing environment and test it on vulnerable applications.</li>
+                </ul>
+        </ul>
+
+        <br>
+<hr>          
+        <br>  
+
+    <div class="section">
+        <h2>Day 4-6: Reverse Engineering and Malware Analysis</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Reverse Engineering Basics</u></li>
+                <ul>
+                    <li>Start with basic reverse engineering of binaries using <b>Ghidra</b> or <b>IDA Pro.</b></li>
+                    <li>Learn to disassemble, analyze control flow, and identify key functions in the code.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>Static and Dynamic Malware Analysis</u></li>
+                <ul>
+                    <li>Perform static analysis on a piece of malware, extracting strings, identifying packers, and analyzing the file structure.</li>
+                    <li>Use tools like <b> Radare2</b> and <b> PEiD </b> for initial static analysis.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Dynamic Malware Behavior Analysis</u></li>
+                <ul>
+                    <li>Perform dynamic analysis of malware in a controlled environment using <b> Cuckoo</b> <b>Sandbox</b> or <b>Remnux.</b></li>
+                    <li>Monitor the malware’s behavior, including registry changes, file system modifications, and network connections.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Unpacking and Obfuscation</u></li>
+                <ul>
+                    <li>Learn how to <b>unpack obfuscated</b> malware using tools like <b> UPX </b> or manual unpacking techniques.</li>
+                    <li>Study how to deal with common obfuscation techniques used to evade detection.</li>
+                </ul>
+        </ul>
+        
+        <br>
+<hr>          
+        <br>  
+
+    <div class="section">
+        <h2>Day 7-9: Advanced Web Application Security</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced SQL Injection</u></li>
+                <ul>
+                    <li>Focus on blind SQL Injection and time-based injection techniques.</li>
+                    <li>Practice bypassing filters and extracting data through sophisticated SQL queries.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Server-Side Request Forgery (SSRF)</u></li>
+                <ul>
+                    <li>Learn how to exploit SSRF vulnerabilities to read internal resources or access unauthorized systems.</li>
+                    <li>Practice SSRF attacks on labs or vulnerable applications.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Business Logic Vulnerabilities</u></li>
+                <ul>
+                    <li>Understand and exploit business logic vulnerabilities, which arise from flaws in the application's workflow.</li>
+                    <li>Examples: Bypassing payment systems, abusing shopping cart logic, or exploiting authorization flaws.</li>
+                </ul>
+        </ul>
+
+        <br>
+<hr>
+    
+        <br>
+   
+    <div class="section">
+        <h2>Day 10-12: Post-Exploitation and Persistence</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Advanced Persistence Techniques</u></li>
+                <ul>
+                    <li>Learn how to maintain access to compromised systems using rootkits, bootkits, or backdoors.</li>
+                    <li>Explore techniques to avoid detection, like hiding processes and files on both Windows and Linux systems.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Credential Dumping and Memory Forensics</u></li>
+                <ul>
+                    <li>Use tools like Mimikatz or Windows Credential Editor to dump credentials from memory.</li>
+                    <li>Perform memory forensics to analyze running processes and discover sensitive information.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Lateral Movement and Pivoting</u></li>
+                <ul>
+                    <li>Learn how to move laterally within a network using compromised credentials or pass-the-hash techniques.</li>
+                    <li>Practice using tools like <b>Impacket</b>, <b>PsExec</b>, and <b>Pivoting</b> in Metasploit to gain access to additional systems.</li>
+                </ul>
+        </ul>
+
+        <br>
+<hr>
+
+        <br>
+
+    <div class="section">
+        <h2>Day 13-15: Advanced Network and Protocol Exploitation</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Protocol Exploitation</u></li>
+                <ul>
+                    <li>Exploit network protocols like DNS, SMB, and SNMP.</li>
+                    <li>Practice exploiting known protocol vulnerabilities and analyze protocol traffic using Wireshark and Scapy.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Man-in-the-Middle (MitM) Attacks</u></li>
+                <ul>
+                    <li>Learn how to perform advanced MitM attacks using techniques like SSL stripping, DNS spoofing, and ARP poisoning.</li>
+                    <li>Set up <b>Ettercap</b> or <b>Bettercap</b> to practice MitM attacks in controlled environments.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Bypassing Network Security</u></li>
+                <ul>
+                    <li>Study advanced techniques to bypass firewalls, intrusion detection systems (IDS), and intrusion prevention systems (IPS).</li>
+                    <li>Learn how to evade detection by obfuscating traffic, using encryption, and exploiting misconfigurations.</li>
+                </ul>
+        </ul>
+
+        <br>
+<hr>
+
+        <br>
+
+    <div class="section">
+        <h2>Day 16-18: Red Teaming and Advanced Tactics</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Red Team Engagement Planning</u></li>
+                <ul>
+                    <li>Learn how to design and execute a red team engagement.</li>
+                    <li>Understand Tactics, Techniques, and Procedures (TTPs) used by adversaries and how to simulate them in a real-world scenario.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Adversary Emulation and Attack Frameworks</u></li>
+                <ul>
+                    <li>Study adversary emulation using frameworks like MITRE ATT&CK and Atomic Red Team.</li>
+                    <li>Learn how to map your attacks to specific techniques used by threat actors.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Breaching Active Directory (AD)</u></li>
+                <ul>
+                    <li>Focus on Active Directory exploitation, including Kerberoasting, DCSync attacks, and abusing Group Policy.</li>
+                    <li>Practice AD exploitation using tools like <b> BloodHound</b> and <b> PowerView.</b></li>
+                </ul>
+        </ul>
+
+        <br>
+<hr>
+
+        <br>  
+
+    <div class="section">
+        <h2>Day 19-21: Cryptography and Cryptanalysis</h2>
+    </div>
+        <ul>
+            <li><strong style="color:red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Cryptographic Protocols and Attacks</u></li>
+                <ul>
+                    <li>Study cryptographic protocols like SSL/TLS, SSH, and Kerberos.</li>
+                    <li>Learn about common cryptographic attacks such as padding oracle attacks, hash collisions, and timing attacks.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Breaking and Implementing Encryption</u></li>
+                <ul>
+                    <li>Practice breaking weak encryption schemes like DES or improperly implemented cryptography.</li>
+                    <li>Implement <b>AES</b> and <b>RSA</b> encryption schemes in Python to understand how they work at a low level.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Side-Channel Attacks</u></li>
+                <ul>
+                    <li>Study and experiment with side-channel attacks like timing attacks, power analysis, and cache attacks to extract sensitive information from systems.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+<hr>
+
+        <br>    
+
+    <div class="section">
+        <h2>Day 22-24: Cloud and Container Security</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Cloud Security (AWS, Azure, GCP)</u></li>
+                <ul>
+                    <li>Learn about cloud security risks: misconfigurations, insecure access controls, and privilege escalation.</li>
+                    <li>Explore tools like <b>Pacu</b> (AWS exploitation) and ScoutSuite for cloud assessment.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Container Security</u></li>
+                <ul>
+                    <li>Study the security implications of using containers like Docker and learn about container escape techniques.</li>
+                    <li>Practice exploiting vulnerable containers or misconfigurations in Docker or Kubernetes environments.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 5 - 6:</strong> <u>Kubernetes Security</u></li>
+                <ul>
+                    <li>Learn how to attack and secure Kubernetes clusters by exploiting vulnerabilities in Kubernetes configurations and applications.</li>
+                    <li>Explore security tools like <b>Kube-hunter</b> to assess Kubernetes clusters.</li>
+                </ul>
+        </ul>
+    
+        <br>
+<hr>
+
+        <br>
+
+    <div class="section">
+        <h2>Day 25-27: Advanced Capture the Flag (CTF) Competitions</h2>
+    </div>
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Preparation for CTFs</u></li>
+                <ul>
+                    <li>Prepare for advanced CTF challenges by reviewing and refining skills in reverse engineering, exploit development, and web app security.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Exploitation CTFs</u></li>
+                <ul>
+                    <li>Focus on advanced exploitation challenges that involve bypassing protections like <b>ASLR</b> and <b> DEP.</b></li>
+                    <li>Try breaking out of sandboxed environments in CTFs.</li>
+                </ul>
+
+            <br>
+
+            <li><strong>Hour 5 - 6:</strong> <u>Full-Stack Challenges</u></li>
+                <ul>
+                    <li>Participate in CTFs that require a full-stack approach (web, network, system exploitation).</li>
+                    <li>Practice challenges on platforms like <b>Hack The Box</b>, <b>TryHackMe</b>, or <b>CTFTime.</b></li>
+                </ul>
+        </ul>
+    
+        <br>
+<hr>
+
+        <br>
+
+        <h2 class="section1">Weekly Goals:</h2>
+        <ul>
+            <li>Master advanced exploit development techniques, including ROP and shellcoding.</li>
+            <li>Enhance reverse engineering and malware analysis skills using advanced tools and methods.</li>
+            <li>Deep dive into advanced web application vulnerabilities like SSRF and business logic flaws.</li>
+            <li>Study and practice advanced post-exploitation techniques for persistence and lateral movement.</li>
+            <li>Learn how to break and defend network protocols and bypass security systems.</li>
+            <li>Engage in advanced red teaming, adversary emulation, and Active Directory exploitation.</li>
+            <li>Understand cloud and container security risks, including Docker and Kubernetes attacks.</li>
+            <li>Participate in advanced CTF challenges to test and apply all of the above skills.</li>
+        </ul>
+   
+        <hr>
+
+    <button onclick="previousSection()">Previous</button>
+    <button onclick="nextSection()">Next</button>
+    <button onclick="PdfSection()">PDF</button>
+
+
+    <script>
+        function previousSection() {
+            window.location.href = "Intermediate.html"; // Update with your actual previous section link
+        }
+        function nextSection() {
+            window.location.href = "Most_Advance_level.html"; // Update with your actual next section link
+        }
+        function nextSection() {
+            window.location.href = "Most_Advance_level.html"; // Update with your actual next section link
+        }
+        function PdfSection() {
+            window.location.href = "All_pdf.html"; // Update with your actual next section link
+        }
+    </script>
+
+        <div class="social-icons">
+            <a href="https://t.me/Hunter_3301" target="_blank">
+                <i class="fab fa-telegram" style="font-size:50px; color:#0088cc;"></i>
+            </a>
+        </div>
+        <br>
+    <footer>Author: Noob Hunter</footer>
+</body>
+</html>

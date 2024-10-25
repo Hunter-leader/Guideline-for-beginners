@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            margin: 20px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+        .section1 {
+            background-color: rgb(87, 131, 131);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            color: #ff0000;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        }
+
+        .social-icons a {
+        text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="section1">
+        <h1>Beginning Level</h1>
+    </div>
+
+    <div class="section">
+        <h2>Day 1-3: Setting Up Your Environment and Basic Linux Skills</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color:red">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Set Up Virtual Machines (VMs)</u></li>
+                <ul>
+                    <li>Install Kali Linux and a vulnerable machine like <b>Metasploitable2</b> using <b>VMware</b> or <b>VirtualBox.</b></li>
+                    <li>Familiarize yourself with VM settings and network configurations (NAT, Bridged, Host-only).</li>
+                </ul>
+            
+            <br>    
+            
+            <li><strong>Hour 3:</strong> <u>Introduction to Kali Linux</u></li>
+                <ul>
+                    <li>Basic commands in Kali: ls, cd, pwd, cp, mv, rm, chmod, chown, apt update, apt install.</li>
+                    <li>Practice navigating the Linux filesystem and understand basic file permissions.</li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 4 - 5:</strong> <u>Networking Basics</u></li>
+                <ul>
+                    <li>Learn about IP addresses, DNS, TCP/UDP, and ports. Use ifconfig and ip a to check your IP.</li>
+                    <li>Use tools like ping, traceroute, and netstat to explore basic network behavior.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Basic Network Scanning with Nmap</u></li>
+                <ul>
+                    <li>Introduction to Nmap. Perform basic scans to discover open ports on the <b>Metasploitable2 machine:</b> <pre><code> nmap -sP [target_IP]</code></pre><pre><code> nmap -sV [target_IP].</code></pre></li>
+                </ul>
+        </ul>
+    <br>
+    <hr>
+    <br>
+
+    <div class="section">
+        <h2>Day 4-6: Reconnaissance and Enumeration</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Information Gathering</u></li>
+                <ul>
+                    <li>Use whois, dig, and nslookup to gather information about domains and IP addresses.</li>
+                    <li>Research OSINT (Open-Source Intelligence): Use websites like Shodan and Google Dorking to find vulnerable systems.</li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 3 - 4:</strong> <u>Advanced Scanning with Nmap</u></li>
+                <ul>
+                    <li>Learn advanced <b>Nmap</b> options like <code>-A</code>, <code>-O</code> for <b>OS detection</b>, and <code>-sC</code> to run default scripts.</li>
+                    <li>Perform a detailed scan of your <b>Metasploitable2 VM:</b> <code> nmap -A [target_IP]</code></li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 5:</strong> <u>Banner Grabbing</u></li>
+                <ul>
+                    <li>Learn banner grabbing techniques using Netcat and Telnet to extract information from open ports.</li>
+                    <li>Example: <pre>nc [target_IP] 80 for HTTP headers</pre></li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Service Enumeration</u></li>
+                <ul>
+                    <li>Identify services running on open ports using tools like <b>Nikto</b> for web servers and <b>Enum4Linux</b> for SMB shares.</li>
+                </ul>
+            </li>
+        </ul>
+   
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 7-9: Vulnerability Identification and Exploitation Basics</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li>
+            <br>
+            <li><strong>Hour 1 - 2:</strong> <u>Common Vulnerabilities</u></li>
+                <ul>
+                    <li>Learn about common vulnerabilities: SQL Injection, Cross-Site Scripting (XSS), Buffer Overflow.</li>
+                    <li>Understand the OWASP Top 10 security risks.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>SQL Injection (Basic)</u></li>
+                <ul>
+                    <li>Set up an intentionally vulnerable web app like <b>DVWA</b>.</li>
+                    <li>Practice SQL Injection: bypass login using <code>' OR 1=1--</code></li>
+                </ul>
+            
+            <br>
+
+            <li><strong>Hour 4 - 5:</strong> <u>Using Metasploit Framework</u></li>
+                <ul>
+                    <li>Learn how to launch Metasploit <b>(msfconsole).</b></li>
+                    <li>Perform a basic exploit: Find a vulnerability in Metasploitable2, use Metasploit to launch the exploit, and gain a shell.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Privilege Escalation</u></li>
+                <ul>
+                    <li>Understand privilege escalation basics. Use LinEnum or linux-exploit-suggester on your compromised system to find potential ways to escalate privileges.</li>
+                </ul>
+            </ul>
+    
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 10-12: Post-Exploitation and Reporting</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Post-Exploitation Basics</u></li>
+                <ul>
+                    <li>Learn post-exploitation techniques: uploading and downloading files, maintaining access with persistence.</li>
+                    <li>Practice using Metasploit’s meterpreter to interact with a compromised system.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3:</strong> <u>Maintaining Persistence</u></li>
+                <ul>
+                    <li>Learn about techniques to maintain persistence (backdoors, scheduled tasks, cron jobs).</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 4 - 5:</strong> <u>Documentation and Reporting</u></li>
+                <ul>
+                    <li>Practice documenting your findings in a clear, professional manner.</li>
+                    <li>Write reports on the vulnerabilities you discovered and how they were exploited. Include steps for remediation.</li>
+                </ul>
+
+            <br>
+            
+            <li><strong>Hour 6:</strong> <u>Clean Up</u></li>
+                <ul>
+                    <li>Learn how to clean up after a penetration test. Remove backdoors, tools, and logs to restore the system to its previous state.</li>
+                </ul>
+        </ul>
+  
+<br>
+<hr>
+<br>
+
+    <div class="section">
+        <h2>Day 13-14: Practice and Review</h2>
+    </div>
+
+        <ul>
+            <li><strong style="color: red;">Total time:</strong> 6 hours/day</li><br>
+            <li><strong>Hour 1 - 2:</strong> <u>Capture the Flag (CTF) Challenges</u></li>
+                <ul>
+                    <li>Spend 2 hours solving beginner-level CTF challenges on platforms like TryHackMe or Hack The Box.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 3 - 4:</strong> <u>Vulnerability Research</u></li>
+                <ul>
+                    <li>Research vulnerabilities found in your previous tasks. Understand the deeper mechanics and how to patch them.</li>
+                </ul>
+            
+            <br>
+            
+            <li><strong>Hour 5 - 6:</strong> <u>Review and Reinforce Learning</u></li>
+                <ul>
+                    <li>Review all the concepts you’ve learned so far.</li>
+                    <li>Practice again with tools like <b>Nmap</b>, <b>Metasploit</b>, <b>Nikto</b>, and others to solidify your understanding.</li>
+                </ul>
+        </ul>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2 class="section1">Weekly Goals:</h2>
+    <ul>
+        <li>Understand and set up your hacking environment.</li>
+        <li>Learn basic Linux commands, networking, and web vulnerabilities.</li>
+        <li>Master fundamental tools like Nmap, Metasploit, and Netcat.</li>
+        <li>Practice enumeration, scanning, and exploitation.</li>
+        <li>Document your findings and clean up after exploitation.</li>
+    </ul>
+
+    <hr>
+    <button onclick="goToIntermediate()">Next</button>
+    <button onclick="goToPDF()">PDF</button>
+
+<script>
+    function goToIntermediate() {
+        window.location.href = 'Intermediate.html'; // Change this to the actual next page
+    }
+    
+    function goToPDF() {
+        window.location.href = 'All_pdf.html'; // Change this to the actual next page
+    }
+</script>
+
+    <div class="social-icons">
+        <a href="https://t.me/Hunter_3301" target="_blank">
+            <i class="fab fa-telegram" style="font-size:50px; color:#0088cc;"></i>
+        </a>
+    </div>
+
+    <br>
+
+    <footer>Author: Noob Hunter</footer>
+</body>
+</html>
